@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/star-rating-svg.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+            <nav class="navbar navbar-dark bg-primary p-2">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bold" href="#">Febrian SF</a>
+                    <h2 class="navbar-brand">K3521026</h2>
+                    </div>
+                </div>
+            </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row h-100">
+                <div class="col-lg-6">
+                    <div class="content right p-3">
+                        <h5 class="fw-bold bg-info p-2">Testimoni</h5>
+                        <p>
+                            Awalnya saya coba - coba, tetapi lama - lama.. beuuh.. saya menjadi semakin yakin bahwa saya salah mengambil jalan hidup. Tetapi setelah saya berkuliah di matkul desain web ini, pandangan saya menjadi tercerahkan bahwa lulusan dari PTIK bisa menjadi apa saja yang mereka mau.
+                            <br>
+                            Untuk kuliah desain web selama ini, tugas - tugas yang diberikan cukup menantang. Apalagi tugas project untuk UAS, mudah - mudahan kami mampu menyelesaikan tugas UAS sesuai tenggat waktu yang diberikan.
+                        </p>
+                        <div class="my-rating text-center"></div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-6 pt-lg-0 pt-3" >
+                    <div class="content left p-3">
+                        <h5 class="fw-bold bg-info p-2">Kritik</h5>
+                        <p>
+                            Tidak ada yang bisa saya kritik untuk saat ini.
+                        </p>
+                    </div>
+                    <div class="block"></div>
+                    <div class="content left p-3">
+                        <h5 class="fw-bold bg-info p-2">Saran</h5>
+                        <p>
+                            Selalu update  materi yang diberikan sesuai dengan perkembangan dunia web saat ini.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="bg-primary text-center">
+            <a href="https://ptik.fkip.uns.ac.id" target="_blank">Pendidikan Teknik Informatika dan Komputer &copy; 2022</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.star-rating-svg.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(".my-rating").starRating({
+            readOnly: true,
+            initialRating: 4,
+            strokeColor: '#007bff',
+            strokeWidth: 10,
+            starSize: 20
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Latihan 5</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Formulir pendaftaran anggota Perpustakaan</h1>
+    <form action="/action.php">
+        <table style="border: 1px black solid; margin-left: auto; margin-right: auto; padding: 10px;"">
+            <tr><td>
+                <label>Nama :</label><br>
+                <input type="textbox" name="nama" required><br><br>
+
+                <label>NIM :</label><br>
+                <input type="textbox" name="nim"><br><br>
+                
+                <label>Email :</label><br>
+                <input type="email" name="email" required><br><br>
+
+                <label>Jenis Kelamin :</label><br>
+                <input type="radio" name="jenis-kelamin">
+                <label>Laki-laki</label>
+                <input type="radio" name="jenis-kelamin">
+                <label>Perempuan</label><br><br>
+
+                <label>Fakultas :</label><br>
+                <input list="fakultas" name="fakultas" required>
+                <datalist id="fakultas">
+                    <option value="FKIP"></option>
+                    <option value="FK"></option>
+                    <option value="FH"></option>
+                    <option value="FP"></option>
+                    <option value="MIPA"></option>
+                </datalist><br><br>
+                
+                <label>Prodi :</label><br>
+                <input list="prodi" name="prodi" required>
+                <datalist id="prodi">
+                    <option value="PTIK"></option>
+                    <option value="PTM"></option>
+                    <option value="Informatika"></option>
+                    <option value="Matematika"></option>
+                    <option value="Kesehatan Masyarakat"></option>
+                </datalist><br><br>
+
+                <br>
+                <input type="submit" value="Daftar" style="width: 100px;">
+            </tr></td>
+        </table>
+    </form>
+</body>
+</html>

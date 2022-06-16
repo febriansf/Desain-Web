@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>Menggunakan media Query CSS3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        .smartphone {
+            display: none;
+        }
+
+        .logo {
+            display: none;
+        }
+
+        @media only screen and (max-width: 428px) {
+            body {
+                background-color: yellow;
+            }
+            .smartphone {
+                display: block;
+            }
+        }
+
+        @media screen and (min-width: 1025px) {
+            .logo {
+                display: block;
+            }
+
+            .logo img {
+                width: 20%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Menggunakan Media Query CSS 3</h1>
+    <div class="smartphone">
+        <h2>Terdeteksi ukuran smartphone</h2>
+    </div>
+    <div class="logo">
+        <img src="img/logo.png" alt="Ini Logo UNS" >
+    </div>
+</body>
+</html>

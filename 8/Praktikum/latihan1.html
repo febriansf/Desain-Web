@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+    <style>
+        .mark {
+            background-color: yellow;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>PTIK FKIP UNS</h1>
+    <p>
+        The <span>Faculty of Teacher Training and Education</span>, <span>Sebelas Maret University
+        </span>, Surakarta is an <span>Educational Personnel Education Institution (LPTK)</span>
+        which has 24 study programs in 6 majors. Each study program has its own characteristics in
+        producing <span>superior, strong and intelligent educational staff.</span>
+    </p>
+
+    <p>
+        The <span>Informatics and Computer Technology Education (PTIK)</span> study program is
+        planned to take shelter in the management of the <span>Engineering and Vocational Education
+        (PTK)</span>
+        department. This placement revises our previous statement, where the PTIK study program is
+        under the P.MIPA department. PTIK is a study program that will produce graduates who are
+        <span>prioritized to teach in vocational/vocational programs</span>. So, it would be better
+        if PTIK was under the PTK department which oversees vocational programs such as
+        <span>Building Engineering Education</span>, and <span>Engineering Education</span>. To meet
+        the needs of lecturers in the field of information technology that cannot be met by the PTK
+        department, PTIK will conduct <span>resource sharing with the mathematics study
+        program</span>.
+    </p>
+
+    <button>Highlight Text</button>
+
+    <script>
+        $(function(){
+            $('button').click(function(){
+                $('span').toggleClass("mark");
+            });
+        });
+    </script>
+</body>
+</html>
